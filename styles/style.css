@@ -1,0 +1,185 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Noto+Serif:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.inter{
+    font-family: "Inter",sans-serif;
+    font-weight: normal;
+    font-size: medium;
+}
+.noto-serif{
+    font-family: "Noto Serif", sans-serif;
+}
+body{
+    max-width: 1140px;
+    margin: 0 auto;
+    background: rgb(245, 248, 255);
+}
+.navbar{
+    margin: 30px auto 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links ul{
+    list-style: none;
+    display: flex;
+    gap: 48px;
+}
+.nav-links ul a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: rgb(137, 135, 161);
+font-family: Inter;
+font-size: 1rem;
+font-weight: 400;
+}
+#home{
+    color: rgb(37, 36, 50);
+font-family: Inter;
+font-size: 1rem;
+font-weight: 700;
+}
+#cart{
+    color: rgb(0, 0, 0);
+font-family: Inter;
+font-size: 1rem;
+font-weight: 400;
+}
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.banner-title{
+    font-size: 4rem;
+font-weight: 700;
+color: #E95A08;
+margin-bottom: 13px;
+}
+.banner-title span{
+    color: black;
+}
+.banner-des{
+    color: rgba(0, 0, 0, 0.5);
+font-family: Inter;
+font-size: 1.3rem;
+font-weight: 400;
+}
+.banner-img{
+    border: 1px dashed rgba(0, 0, 0, 0.2);
+}
+.plants{
+    margin-top: 120px;
+}
+.plants-content{
+    text-align: center;
+    
+    margin-bottom: 49px;
+}
+.plants-title{
+    font-family: Noto Serif;
+font-size: 50px;
+font-weight: 700;
+}
+.plants-title span{
+    color: #E95A08;
+}
+.plants-des{
+    color: rgba(0, 0, 0, 0.5);
+font-family: Inter;
+font-size: 22px;
+font-weight: 400;
+}
+.plants-img-collection{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+    row-gap: 30px;
+}
+.plant-container{
+    text-align: center;
+}
+.plant-container button{
+    width: 100%;
+}
+.plant-name{
+    margin-top: 30px;
+    color: rgb(17, 17, 17);
+font-family: Inter;
+font-size: 22px;
+font-weight: 500;
+}
+.plant-price{
+    margin-top: 20px;
+    color: rgb(17, 17, 17);
+font-family: Inter;
+font-size: 22px;
+font-weight: 700;
+}
+.add-to-cart{
+    background: #E95A08;
+    color: rgb(255, 255, 255);
+font-family: Inter;
+font-size: 16px;
+font-weight: 600;
+width: 270px;
+height: 50px;
+border: none;
+}
+
+@media screen and (max-width: 576px){
+    
+    .navbar{
+        max-width: 361px;
+        justify-content: space-between;
+        margin: 67px auto 28px;
+    }
+    .nav-links ul li a{
+        display: none;
+    }
+    .nav-links ul li a#cart{
+        display: flex;
+    }
+    .logo img{
+        max-width: 63px;
+    }
+    .banner{
+        flex-direction: column-reverse;
+        gap: 28px;
+        align-items: center;
+    }
+    .banner-content{
+        margin: auto 16px;
+    }
+    .banner-title{
+        font-size: 24px;
+    }
+    .banner-des{
+        font-size: 14px;
+    }
+    .banner-img{
+        width: 100%;
+    }
+    .plants,.plants-img{
+        max-width: 100%;
+    }
+    .plants-img-collection{
+        grid-template-columns: repeat(2,1fr);
+        padding: 14px ;
+    }
+    .plants-content{
+        margin: auto 28.5px;
+
+    }
+    
+}
+
+
