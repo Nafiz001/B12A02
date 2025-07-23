@@ -404,6 +404,10 @@ text-decoration: none;
         flex-direction: column;
         padding:  18px;
     }
+    .plants-lover img{
+        width: 100%;
+        height: auto;
+    }
     .plants-lover-content{
         padding: 30px;
     }
