@@ -137,6 +137,7 @@ body {
     color: rgb(17, 17, 17);
     font-size: 22px;
     font-weight: 700;
+    margin-bottom: 30px;
 }
 
 .add-to-cart {
@@ -197,7 +198,12 @@ body {
     color: rgba(0, 0, 0, 0.5);
     font-size: 22px;
     font-weight: 400;
+    
     margin-bottom: 20px;
+}
+.plants-lover-content ul{
+    padding-left: 25px;
+
 }
 
 .lover {
@@ -304,7 +310,7 @@ body {
 }
 
 .latest-deal-img-container {
-    height: 423px;
+    height: 418px;
     display: grid;
     gap: 25px;
     grid-template-columns: 1fr 2fr;
@@ -449,6 +455,7 @@ body {
 
     .banner-img {
         width: 100%;
+        border: none;
     }
 
     .plants,
@@ -490,6 +497,9 @@ body {
         flex-direction: column;
         height: auto;
         padding: 10px;
+    }
+    .latest-deal-image::before{
+        background-color: rgba(0, 0, 0, 0.6);
     }
 
     .deal2 {
