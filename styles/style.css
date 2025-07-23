@@ -37,19 +37,16 @@ body{
     align-items: center;
     gap: 8px;
     color: rgb(137, 135, 161);
-font-family: Inter;
 font-size: 1rem;
 font-weight: 400;
 }
 #home{
     color: rgb(37, 36, 50);
-font-family: Inter;
 font-size: 1rem;
 font-weight: 700;
 }
 #cart{
     color: rgb(0, 0, 0);
-font-family: Inter;
 font-size: 1rem;
 font-weight: 400;
 }
@@ -69,7 +66,6 @@ margin-bottom: 13px;
 }
 .banner-des{
     color: rgba(0, 0, 0, 0.5);
-font-family: Inter;
 font-size: 1.3rem;
 font-weight: 400;
 }
@@ -85,7 +81,6 @@ font-weight: 400;
     margin-bottom: 49px;
 }
 .plants-title{
-    font-family: Noto Serif;
 font-size: 50px;
 font-weight: 700;
 }
@@ -94,7 +89,6 @@ font-weight: 700;
 }
 .plants-des{
     color: rgba(0, 0, 0, 0.5);
-font-family: Inter;
 font-size: 22px;
 font-weight: 400;
 }
@@ -113,26 +107,49 @@ font-weight: 400;
 .plant-name{
     margin-top: 30px;
     color: rgb(17, 17, 17);
-font-family: Inter;
 font-size: 22px;
 font-weight: 500;
 }
 .plant-price{
     margin-top: 20px;
     color: rgb(17, 17, 17);
-font-family: Inter;
 font-size: 22px;
 font-weight: 700;
 }
 .add-to-cart{
     background: #E95A08;
     color: rgb(255, 255, 255);
-font-family: Inter;
 font-size: 16px;
 font-weight: 600;
 width: 270px;
 height: 50px;
 border: none;
+cursor: pointer;
+
+
+}
+.add-to-cart:hover{
+    background: rgb(255, 255, 255);
+    color: #E95A08;
+    border: 1px solid #E95A08;
+    transition: 0.3s ease-in-out;
+}
+.alert-message {
+    display: none;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 25px;
+    z-index: 1000;
+}
+.add-to-cart:active + .alert-message {
+    display: block;
+    
 }
 .plants-lover{
     display: flex;
@@ -143,14 +160,12 @@ border: none;
 }
 .plants-lover-title{
     color: rgb(0, 0, 0);
-font-family: Noto Serif;
 font-size: 50px;
 font-weight: 700;
 margin-bottom: 20px;
 }
 .plants-lover-des{
     color: rgba(0, 0, 0, 0.5);
-font-family: Inter;
 font-size: 22px;
 font-weight: 400;
 margin-bottom: 20px;
@@ -169,13 +184,22 @@ height: 286px;
     position: absolute;
     left: 347px;
     top: -127px;
+    animation:0.3s ease-in  infinite  rot ;
+}
+
+@keyframes rot{
+    from{
+        rotate: 0deg;
+    }
+    to{
+        rotate: 360deg;
+    }
 }
 .latest-deal{
     margin-top: 130px;
     text-align: center;
 }
 .latest-deal-title{
-    font-family: Noto Serif;
 font-size: 50px;
 font-weight: 700;
 }
@@ -184,7 +208,6 @@ font-weight: 700;
 }
 .latest-deal-des{
     color: rgba(0, 0, 0, 0.5);
-font-family: Inter;
 font-size: 22px;
 font-weight: 400;
 margin-top: 16px;
@@ -227,7 +250,6 @@ text-align: center;
 }
 .latest-deal-img-title{
     color: rgb(255, 255, 255);
-font-family: Noto Serif;
 font-size: 20px;
 font-weight: 700;
 margin: 0;
@@ -236,7 +258,6 @@ padding: 0;
 }
 .shop{
     color: rgb(255, 255, 255);
-font-family: Inter;
 font-size: 16px;
 font-weight: 600;
 }
@@ -276,7 +297,6 @@ font-weight: 600;
 }
 .join-title{
     color: rgb(255, 255, 255);
-font-family: Noto Serif;
 font-size: 50px;
 font-weight: 700;
 margin-bottom: 23px;
@@ -284,7 +304,6 @@ margin-bottom: 23px;
 }
 .email{
     color: rgba(0, 0, 0, 0.5);
-font-family: Inter;
 font-size: 16px;
 font-weight: 400;
 width: 644px;
@@ -295,7 +314,6 @@ padding-left: 20px;
 .submit{
     border: none;
     color: rgb(255, 255, 255);
-font-family: Inter;
 font-size: 16px;
 font-weight: 600;
 background: rgb(233, 90, 8);
@@ -314,7 +332,6 @@ height: 82px;
 }
 .footer-des{
     color: rgba(0, 0, 0, 0.5);
-font-family: Inter;
 font-size: 22px;
 font-weight: 400;
 }
@@ -324,7 +341,6 @@ font-weight: 400;
 }
 .footer a{
    color: rgb(107, 114, 128);
-font-family: Inter;
 font-size: 16px;
 font-weight: 400;
 text-decoration: none;
