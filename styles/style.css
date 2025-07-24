@@ -219,14 +219,15 @@ body {
     position: absolute;
     left: 347px;
     top: -127px;
-    animation: 0.3s ease-in infinite rot;
+    animation: 3s linear infinite  rot;
+    filter: drop-shadow(-4px 10px 4px rgba(0, 0, 0, 0.5)) drop-shadow(4px -10px 4px rgba(0, 0, 0, 0.5)) ;
 }
 
 @keyframes rot {
-    from {
+    0% {
         rotate: 0deg;
     }
-
+    
     to {
         rotate: 360deg;
     }
